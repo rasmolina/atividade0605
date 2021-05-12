@@ -31,6 +31,11 @@ export class CadastrarComponent implements OnInit {
     } else if (this.cadastrados.filter(novocadastro => novocadastro.nome === this.novocadastro.nome).length > 0) {
       return alert('Pessoa já cadastrada!')
     }
+    //se não insetir nenhuma imagem, adiciono uma imagem padrão
+    if (!this.novocadastro.imagem){
+      this.novocadastro.imagem = "https://i.pinimg.com/736x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg";
+    }
+
     this.database.cadastrarPessoa(this.novocadastro);
     alert('Pessoa cadastrada com sucesso!');
     this.novocadastro = {nome: "", idade: 0, imagem:""};
