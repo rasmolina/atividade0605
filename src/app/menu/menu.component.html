@@ -1,0 +1,13 @@
+<p>MENU</p>
+
+<button type="button" (click)="show()">Cadastrar</button>
+
+<!--Percorro a lista de pessoas e escrevo na tela o nome das pessoas cadastradas-->
+
+    <ul>
+        <!--Quando um elemento da lista for clicado, chama a função onSelect-->
+        <li *ngFor="let pep of listadepessoas" (click)="onSelect(pep)" [class.selecionado]="pep == pessoaSelecionada">
+            <span>{{pep.nome}}</span>
+        </li>
+    </ul>
+

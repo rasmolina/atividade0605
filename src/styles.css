@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+/* GRID */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	text-decoration: none;
+	font-family: 'Roboto';
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 300px 550px 500px;
+    grid-template-rows: 60px 600px;
+    grid-template-areas:
+        "cab cab cab"
+        "men lista cad"
+}
+
+div.cab{
+    grid-area: cab;
+    text-align: center;
+    text-justify: center;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px 10px 10px 10px;
+}
+
+div.men{
+    grid-area: men;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px 10px 10px 10px;
+}
+
+div.lista{
+    grid-area: lista;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px 10px 10px 10px;
+}
+
+div.cad{
+    grid-area: cad;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px 10px 10px 10px;
+}
+
+
+h2, p {
+    text-align: center;
+    background-color: slateblue;
+    color: white;
+    font-family: Arial;
+}
+
+p {
+    margin: auto;
+}

@@ -1,0 +1,20 @@
+.selecionado{
+    color: white;
+    font-weight: bold;
+    background-color: slateblue;
+}
+
+
+p{
+    background-color: slateblue;
+}
+
+button{
+    border-style: solid;
+    background-color: red;
+    font-size: x-large;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Arial;
+    margin-left: 80px;
+}

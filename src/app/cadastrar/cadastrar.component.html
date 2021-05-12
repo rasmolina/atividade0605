@@ -1,0 +1,27 @@
+<p>CADASTRO</p>
+
+<div *ngIf="novocadastro">
+
+    <div>
+        <label>Nome:
+            <input id="nom" type="text" [(ngModel)]="novocadastro.nome" placeholder="Nome da pessoa" required>
+        </label><br>
+    </div>
+
+    <div>
+        <label>Idade:
+            <input id="age" type="number" [(ngModel)]="novocadastro.idade" placeholder="Idade da pessoa" min="1">
+        </label><br>
+    </div>
+
+
+    <div>
+        <label>Foto:
+            <input id="foto" type="text" [(ngModel)]="novocadastro.imagem" placeholder="URL da imagem" min="0">
+        </label>
+    </div>
+    
+    <button type="submit" (click)="cadastrar()">Confirmar</button><br>
+    <button type="button" (click)="reset()">Limpar</button>
+    
+</div>
